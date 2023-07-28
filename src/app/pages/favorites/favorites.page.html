@@ -1,0 +1,28 @@
+<ion-header  class="ion-no-border">
+  <ion-toolbar #showbg class="no-background">
+    <ion-buttons slot="start">
+      <ion-back-button color="medium" class="tulbtn">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-right ion-text-capitalize">Favorites</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-card>
+    <ion-card-content class="ion-no-padding">
+      <ion-item *ngFor="let item of pageData;index as i" button (click)="show(item)">
+        <ion-thumbnail [slot]="i % 2 == 0 ? 'start' : 'end'">
+          <img src="../../../assets/images/{{item.image}}">
+        </ion-thumbnail>
+        <ion-label>
+          <h3>{{item.name}}</h3>
+          <p>{{item.shortDesc}}</p>
+        </ion-label>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

@@ -1,0 +1,34 @@
+<ion-header  class="ion-no-border">
+  <ion-toolbar #showbg class="no-background">
+    <ion-buttons slot="start">
+      <ion-button color="light" class="tulbtn" (click)="close()">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title id="showupx" #showup class="hide ion-text-right ion-text-capitalize">{{details.name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content scrollEvents="true" [appFadeup]="showup">
+  
+  <ion-card>
+    <img src="../../../assets/images/{{details.image}}" />
+    <ion-card-header>
+      <ion-card-title class="fault-fav">{{$any(details.name)}}
+        <ion-buttons><ion-button [color]="color" (click)="fav(favorite)"><ion-icon [name]="fault"></ion-icon></ion-button></ion-buttons>
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="ion-no-padding">
+      <ion-item lines="none">
+        <p>{{$any(details.longDesc)}}</p>
+      </ion-item>
+      <h2 class="ion-padding">Possible Solution</h2>
+      <ion-list lines="none">
+        <ion-item [counter]="true" *ngFor="let item of $any(details.solution);index as i">
+          <p><span class="w6">{{i+1}}.   </span> {{item}}</p>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

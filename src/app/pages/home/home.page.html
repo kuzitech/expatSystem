@@ -1,0 +1,91 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar class="no-border bg-trans">
+    <ion-buttons slot="start">
+      <ion-avatar style="width: auto;height:auto">
+        <img src="../../../assets/logoyct.png" class="applogo">
+      </ion-avatar>
+        <p style="font-weight:600">ExpatSystem</p>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="history()" class="home-heart favbutton" color="screen"><ion-icon name="heart"></ion-icon></ion-button>
+      <ion-button (click)="changeMode()"><ion-icon name="contrast-outline"></ion-icon></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-row class="ion-padding">
+    <!--  Section Title -->
+    <ion-col size="9">
+      <h4 class="section-header">Quick Faults</h4>
+    </ion-col>
+    <ion-col size="3" (click)="faulty('General')" class="ion-text-end">
+      <ion-text class="sk-20">More</ion-text>
+    </ion-col>
+    <ion-slides class="appliance_ion-slides" [options]="opts">
+      <ion-slide (click)="slideclick( aps.name )" color="secondary" class="appliance" *ngFor="let aps of quickfaults">
+        <!-- <img [src]="'../../../assets/images/'+aps.logo+'.png'"> -->
+        <div><ion-icon [name]="aps.logo"></ion-icon></div>
+        <span class="title">{{ aps.name }}</span>
+      </ion-slide>
+      <ion-slide (click)="faulty('General')" class="appliance">
+        <div class="more-slide"><ion-icon color="light" name="add"></ion-icon></div>
+        <span class="title slide-last">More</span>
+      </ion-slide>
+    </ion-slides>
+  </ion-row>
+
+  <ion-row class="ion-padding">
+    <!--  Section Title -->
+    <ion-col size="12">
+      <h4 class="section-header">Categories</h4>
+    </ion-col>
+    <ion-col size="6">
+      <ion-card (click)="faulty('General')" class="gex">
+        <ion-card-header>
+          <ion-card-title>General</ion-card-title>
+        </ion-card-header>
+      
+        <ion-thumbnail>
+          <ion-icon name="construct"></ion-icon>
+        </ion-thumbnail>
+      </ion-card>
+    </ion-col>
+    <ion-col size="6">
+      <ion-card (click)="faulty('Android')" class="gex">
+        <ion-card-header>
+          <ion-card-title>Android</ion-card-title>
+        </ion-card-header>
+      
+        <ion-thumbnail>
+          <ion-icon name="logo-android"></ion-icon>
+        </ion-thumbnail>
+      </ion-card>
+    </ion-col>
+    <ion-col size="6">
+      <ion-card (click)="faulty('iPhone')" class="gex">
+        <ion-card-header>
+          <ion-card-title>iPhone</ion-card-title>
+        </ion-card-header>
+      
+        <ion-thumbnail>
+          <ion-icon name="logo-apple"></ion-icon>
+        </ion-thumbnail>
+      </ion-card>
+    </ion-col>
+    <ion-col size="6">
+      <ion-card (click)="faulty('Windows')" class="gex">
+        <ion-card-header>
+          <ion-card-title>Windows</ion-card-title>
+        </ion-card-header>
+      
+        <ion-thumbnail>
+          <ion-icon name="logo-windows"></ion-icon>
+        </ion-thumbnail>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+  
+</ion-content>

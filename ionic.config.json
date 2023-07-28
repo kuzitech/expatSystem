@@ -1,0 +1,7 @@
+{
+  "name": "expatSystem",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

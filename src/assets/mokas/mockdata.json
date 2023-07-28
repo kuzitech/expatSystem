@@ -1,0 +1,90 @@
+[
+    {
+        "type": "common",
+        "name": "Slow Phone",
+        "fault": "This is something that everybody has experienced at least once. It is the most common mobile phone issue and it can be associated with old phones. However, newer devices can present the same problem. When your Random-Access Memory (RAM) is full of apps and files that you do not use or need, your phone tends to respond slowly.",
+        "solution": "Clean your cell phone and close/delete apps, files and clear the cache data. If you recently installed an app and your phone is not working well, you should uninstall it and see if your mobile phone runs faster. If this does not help you, you can also try saving important information on Google Drive, Dropbox or just on your computer. Then, you can restore your cell phone to factory data.",
+        "placeHolder": "",
+        "image": ""
+    },
+    {
+        "type": "",
+        "name": "",
+        "fault": "",
+        "solution": "",
+        "placeHolder": "",
+        "image": ""
+    },
+    {
+        "type": "",
+        "name": "",
+        "fault": "",
+        "solution": "",
+        "placeHolder": "",
+        "image": ""
+    },
+    {
+        "type": "",
+        "name": "",
+        "fault": "",
+        "solution": "",
+        "placeHolder": "",
+        "image": ""
+    },
+    {
+        "type": "",
+        "name": "",
+        "fault": "",
+        "solution": "",
+        "placeHolder": "",
+        "image": ""
+    },
+    {
+        "type": "",
+        "name": "",
+        "fault": "",
+        "solution": "",
+        "placeHolder": "",
+        "image": ""
+    },
+    {
+        "type": "",
+        "name": "",
+        "fault": "",
+        "solution": "",
+        "placeHolder": "",
+        "image": ""
+    },
+    {
+        "type": "",
+        "name": "",
+        "fault": "",
+        "solution": "",
+        "placeHolder": "",
+        "image": ""
+    },
+    {
+        "type": "",
+        "name": "",
+        "fault": "",
+        "solution": "",
+        "placeHolder": "",
+        "image": ""
+    },
+    {
+        "type": "",
+        "name": "",
+        "fault": "",
+        "solution": "",
+        "placeHolder": "",
+        "image": ""
+    },
+    {
+        "type": "",
+        "name": "",
+        "fault": "",
+        "solution": "",
+        "placeHolder": "",
+        "image": ""
+    }
+]
